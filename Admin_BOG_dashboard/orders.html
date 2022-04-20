@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>::::</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.css"
+    />
+</head>
+
+<body>
+    <div class="sidebar-overlay"></div>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+
+            <ul id="metismenu" class="list-unstyled components">
+                <li>
+                    <a href="#"><i class="fas fa-house"></i>Dashboard
+                         <div class="top"></div><div class="bottom"></div>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="fas fa-file-invoice"></i>Orders
+                        <div class="top"></div><div class="bottom"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-cube"></i>Products
+                        <div class="top"></div><div class="bottom"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+            </button>
+            <div class="dashboard_header">
+                <div class="dashboard_left">
+                    <div class="dashbaord_title">Dashboard</div>
+                    <p>Good to See you  Again</p>
+                </div>
+                <div class="dashboard_right">
+                    <ul class="d_ul">
+                        <li><a class="file_a" href="#"><i class="far fa-file"></i></a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="profile_b logout_drp dropdown-toggle" type="button" id="logout" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="assets/images/client.jpg" alt="p1">
+                                  <div class="profile_spans">
+                                      <span class="profile_span">Oda Dink</span>
+                                      <span class="admin_span">Admin</span>
+                                  </div>
+                                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu profile_menu" aria-labelledby="logout">
+                                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content_inner table_content">
+                <div class="material_request_outer material">
+                     <div class="main_title">
+                         <select class="custom_input material_select">
+                             <option>Material Request</option>
+                         </select>
+                     </div>
+                    <select class="custom_input filter_order">
+                         <option>Filter Order</option>
+                     </select>
+                     <a class="view_all create" href="#">Create Material Request</a>
+                    <input class="custom_input search" id="myInput" type="text" placeholder="Type here..." name="">
+                </div>
+<div class="table-responsive">
+      <table id="example1" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                  Customer Name
+                </th>
+                <th>Products</th>
+                <th>Orders</th>
+                <th>Order Date</th>
+                <th>Status</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select">
+                      <option>Received</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select">
+                      <option>Received</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select">
+                      <option>Received</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select">
+                      <option>Received</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select">
+                      <option>Received</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select">
+                      <option>Received</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select">
+                      <option>Received</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select pending">
+                      <option>Pending</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select pending">
+                      <option>Pending</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr><tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select pending">
+                      <option>Pending</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/client.jpg" alt="client">
+                    <span>Clifford</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="name_td">
+                  <div class="img_li">
+                    <img src="assets/images/cement.jpg" alt="cement">
+                    <span>Cement</span>
+                  </div>
+                </div>
+              </td>
+              <td>#1234567</td>
+              <td>3-22-2022</td>
+              <td>
+                  <select class="approve_select pending">
+                      <option>Pending</option>
+                  </select>
+              </td>
+              <td>$1000</td>
+            </tr>
+          </table>
+            </div>
+            </div>    
+        </div>
+    </div>
+    
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.0.4/dist/scrollspy.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/all.js"></script>
+<!--     <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script> -->
+</body>
+
+</html>
